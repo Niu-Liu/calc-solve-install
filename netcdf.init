@@ -1,0 +1,12 @@
+# filename: netcdf.init
+# Here I use a old version of netcdf
+tar -xvzf netcdf-3.6.3.tar.gz
+cd netcdf-3.6.3
+
+./configure --prefix=/usr/local/netcdf-3.6.3/
+
+make
+
+make install 
+
+make check
